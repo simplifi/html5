@@ -97,6 +97,7 @@ HTML5 Assets are not directly accessible. If you make a mistake and need to chan
 ##Additional Information
 * If you include an ad.size meta tag in the ad when you upload it the system will automatically detect and choose the correct ad size for your automatically. The Ad size meta tag is defined within the <head> tag. For example:
 ```<meta name="ad.size" content="width=300,height=250">```
+* Macro replacement is only performed on the index.html. Placing macros into referenced javascript files is not supported.
 * Expandable ads are not supported.
 * When creating ads with the Google Web Designer you must select Non-Google Ad from the Environment drop down list when creating the ad. DoubleClick, AdMob and AdWords environment ads are not supported.
 * Mobile Ad Networks (MoPub) must use target=”_blank” on links due to their limited support for IFrames. See here for further details: https://dev.twitter.com/mopub-demand/marketplace/iframe
