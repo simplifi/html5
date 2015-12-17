@@ -1,4 +1,4 @@
-#HTML5 Developer Docs  v1.1
+#HTML5 Developer Docs
 
 ##ABOUT
 This document describes how to create Simpli.fi compatible HTML5 ads.
