@@ -1,4 +1,4 @@
-#HTML5 Developer Docs
+#Simpli.fi HTML5 Developer Docs and Samples
 
 ##ABOUT
 This document describes how to create Simpli.fi compatible HTML5 ads.
@@ -55,7 +55,7 @@ In order for the HTML5 ad to pass validation, your HTML5 ad must meet the follow
  * .JPEG
  * .SVG
 * Zip files can contain up to 50 files
-* Subfolders are not allowed 
+* Subfolders are not allowed
 * All content used in HTML5 ad must be contained in the ZIP file. No external references are allowed except resources for ```<video>``` and ```<audio>```.
  * If you use of the ```<video>``` or ```<audio>``` tag you must host the external assets.
 * Videos that play by default MUST NOT play audio by default.
@@ -75,7 +75,7 @@ HTML5 Assets are not directly accessible. If you make a mistake and need to chan
 '{{sifiUserId}}'           : The Simpli.fi identifier for this user
 '{{sifiImpression}}'       : The URL of the ad at the time it was served
 '{{queryParams}}'          : The original query string parameters
-'{{exchangeUserId}}'       : The id of the user the exchange has assigned 
+'{{exchangeUserId}}'       : The id of the user the exchange has assigned
 '{{exchangeId}}'           : The id of the exchange where the ad was bought
 '{{keywordId}}'            : The id of the keyword for the transaction
 '{{keyword}}'              : The keyword for targeted for the transaction
@@ -95,8 +95,8 @@ HTML5 Assets are not directly accessible. If you make a mistake and need to chan
 '{{escapedReferer}}'       : The escaped referrer sent in the bid request   NOTE: Not all exchanges forward this data consistently. It may be unreliable.
 ```
 ##Additional Information
-* If you include an ad.size meta tag in the ad when you upload it the system will automatically detect and choose the correct ad size for your automatically. The Ad size meta tag is defined within the <head> tag. For example: 
+* If you include an ad.size meta tag in the ad when you upload it the system will automatically detect and choose the correct ad size for your automatically. The Ad size meta tag is defined within the <head> tag. For example:
 ```<meta name="ad.size" content="width=300,height=250">```
 * Expandable ads are not supported.
 * When creating ads with the Google Web Designer you must select Non-Google Ad from the Environment drop down list when creating the ad. DoubleClick, AdMob and AdWords environment ads are not supported.
-* Mobile Ad Networks (MoPub) must use target=”_blank” on links due to their limited support for IFrames. See here for further details: https://dev.twitter.com/mopub-demand/marketplace/iframe 
+* Mobile Ad Networks (MoPub) must use target=”_blank” on links due to their limited support for IFrames. See here for further details: https://dev.twitter.com/mopub-demand/marketplace/iframe
