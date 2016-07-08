@@ -54,6 +54,7 @@ In order for the HTML5 ad to pass validation, your HTML5 ad must meet the follow
  * .JPG
  * .JPEG
  * .SVG
+ * .JSON
 * Zip files can contain up to 50 files
 * Subfolders are not allowed
 * All content used in HTML5 ad must be contained in the ZIP file. No external references are allowed except resources for ```<video>``` and ```<audio>```.
