@@ -38,7 +38,8 @@ Use the click verify button to ensure that your ad clicks through to the target 
 
 ##HTML5 Ad Validations
 In order for the HTML5 ad to pass validation, your HTML5 ad must meet the following requirements:
-* The zip file must be 250kb or smaller
+* Each file in the zip cannot exceed 250kb in size.
+* The overall rendered (unzipped) ad cannot exceed 2mb in size.
 * There must be a file named index.html
 * HTML5 ad index.html must include:
  * ```<!DOCTYPE html>``` declaration
