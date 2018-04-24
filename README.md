@@ -15,9 +15,12 @@ Simpli.fi Macros are placeholders that are used to set replacement values for th
 ## CREATING A BASIC AD
 Getting Started
 We’ll begin by creating a very simple custom HTML5 ad and providing the macro for the click tracking to work. Here are the basic steps:
+
 Create a new folder on your computer that will contain the ad.
 Add an image. In our example the ad will be a 300x250 ad, so the dimensions of our image will be 300x250.
+
 Add an html page that references the image. Below is the html we will use for the ad.
+
 ### BASIC AD HTML
 ```
 <!DOCTYPE html>
@@ -32,37 +35,47 @@ Add an html page that references the image. Below is the html we will use for th
 ```
 ### Uploading the ad
 Next we’re going to create a zip file that contains the ad html and image file and upload it to the UI.
+
 Save the HTML contents from BASIC AD HTML into a new file named index.html. Next, create a zip file that contains the index.html and 300x250.jpg. NOTE: Only the actual files should be added to the zip. If you include the folder from step 1 above in the zip it will be rejected by the ad validation.
+
 Once you have created the zip file, drag and drop (or click browse) the zip file into your ad campaign in the Simpli.fi UI. The ad will be automatically extracted and its contents will be displayed at the bottom when you open the row.
+
 Use the click verify button to ensure that your ad clicks through to the target URL you specified in the UI. NOTE: If you land on a 403 error page, check to be sure that you have entered a target URL.
 
 ## HTML5 Ad Validations
 In order for the HTML5 ad to pass validation, your HTML5 ad must meet the following requirements:
+
 * The zip file must be 250kb or smaller
 * There must be a file named index.html
 * HTML5 ad index.html must include:
- * ```<!DOCTYPE html>``` declaration
- * ```<html>``` tag
- * ```<head>``` tag
- * ```<body>``` tag
+  * ```<!DOCTYPE html>``` declaration
+  * ```<html>``` tag
+  * ```<head>``` tag
+  * ```<body>``` tag
 * The zip file should contain the HTML for the ad as well as any of the other following file types:
- * .CSS
- * .JS
- * .HTML
- * .GIF
- * .PNG
- * .JPG
- * .JPEG
- * .SVG
+  * .CSS
+  * .JS
+  * .HTML
+  * .GIF
+  * .PNG
+  * .JPG
+  * .JPEG
+  * .SVG
 * Zip files can contain up to 50 files
 * Subfolders are not allowed
-* All content used in HTML5 ad must be contained in the ZIP file. No external references are allowed except resources for ```<video>``` and ```<audio>```.
- * If you use of the ```<video>``` or ```<audio>``` tag you must host the external assets.
+* All content used in HTML5 ad must be contained in the ZIP file. No external references are allowed except resources for ```<video>``` and ```<audio>``` and urls that start with the following domains.
+  * s0.2mdn.net/ads/
+  * ajax.googleapis.com
+  * fonts.googleapis.com
+  * fonts.gstatic.com
+  * tpc.googlesyndication.com
+  * If you use of the ```<video>``` or ```<audio>``` tag you must host the external assets.
 * Videos that play by default MUST NOT play audio by default.
 * Audio MUST NOT play by default.
 
 ## API Usage
 HTML5 Assets are now available through the Ads endpoint and are returned as a collection of assets under the ad.
+
 HTML5 Assets are not directly accessible. If you make a mistake and need to change an asset after it has been uploaded just delete the ad and recreate it.
 
 ## Simpli.fi Macros
@@ -95,8 +108,11 @@ HTML5 Assets are not directly accessible. If you make a mistake and need to chan
 '{{escapedReferer}}'       : The escaped referrer sent in the bid request   NOTE: Not all exchanges forward this data consistently. It may be unreliable.
 ```
 ## Additional Information
+
 * If you include an ad.size meta tag in the ad when you upload it the system will automatically detect and choose the correct ad size for your automatically. The Ad size meta tag is defined within the <head> tag. For example:
-```<meta name="ad.size" content="width=300,height=250">```
+```
+<meta name="ad.size" content="width=300,height=250">
+```
 * Macro replacement is only performed on the index.html. Placing macros into referenced javascript files is not supported.
 * Expandable ads are not supported.
 * When creating ads with the Google Web Designer you must select Non-Google Ad from the Environment drop down list when creating the ad. DoubleClick, AdMob and AdWords environment ads are not supported.
