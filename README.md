@@ -116,5 +116,5 @@ HTML5 Assets are not directly accessible. If you make a mistake and need to chan
 * Macro replacement is only performed on the index.html. Placing macros into referenced javascript files is not supported.
 * Expandable ads are not supported.
 * When creating ads with the Google Web Designer you must select Non-Google Ad from the Environment drop down list when creating the ad. DoubleClick, AdMob and AdWords environment ads are not supported.
-* Mobile Ad Networks (MoPub) must use target=”_blank” on links due to their limited support for IFrames. See here for further details: https://dev.twitter.com/mopub-demand/marketplace/iframe
+* Mobile Ad Networks (MoPub) must use target=”\_blank” on links due to their limited support for IFrames. See here for further details: https://dev.twitter.com/mopub-demand/marketplace/iframe
 * If you have trouble getting your ad to automatically click verify, try adding the 'clickthru' class to the element that opens the target URL for the ad.
