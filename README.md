@@ -10,7 +10,7 @@ A Simpli.fi compatible HTML5 ad has two parts. The first part is your creative, 
 HTML5 ads are essentially just web pages, but they conform to a specific set of rules and are sized to fit in a standard ad location. The IAB is currently working on an industry standard set of recommendations that define the specifics of HTML5, but at the time of this writing those recommendations are in draft form. We have been proactively working with the IAB by contributing feedback to their draft and have implemented a number of the existing recommendations already. More information can be found at about HTML5 ads can be found at http://www.iab.net/html5.
 
 ## What are the Simpli.fi Macros?
-Simpli.fi Macros are placeholders that are used to set replacement values for the ad when the ads are served. You can think of them just like fields in a mail merge document. The list of macros is defined by Simpli.fi and are used in ads to set the target url for clicks, perform cache busting and create dynamic HTML5 ads.
+Simpli.fi Macros are placeholders that are used to set replacement values for the ad when the ads are served. You can think of them just like fields in a mail merge document. The list of macros is defined by Simpli.fi and are used in ads to set the target url for clicks, perform cache busting and create dynamic HTML5 ads.  Please reach out to the Simpli.fi helpdesk or your client success rep in order to obtain an up to date list of supported macros.
 
 ## CREATING A BASIC AD
 Getting Started
@@ -78,35 +78,7 @@ HTML5 Assets are now available through the Ads endpoint and are returned as a co
 
 HTML5 Assets are not directly accessible. If you make a mistake and need to change an asset after it has been uploaded just delete the ad and recreate it.
 
-## Simpli.fi Macros
-```
-'{{clickTag}}'             : The URL where clicks should be sent for tracking
-'{{targetUrl}}'            : The destination URL of the ad
-'{{clickMacro}}'           : The combination of {{clickTag}} and {{targetUrl}}
-'{{escapedClickTag}}'      : URL Encoded clickTag
-'{{doubleEscapedClickTag}}': Double URL Encoded clickTag
-'{{sifiUserId}}'           : The Simpli.fi identifier for this user
-'{{sifiImpression}}'       : The URL of the ad at the time it was served
-'{{queryParams}}'          : The original query string parameters
-'{{exchangeUserId}}'       : The id of the user the exchange has assigned
-'{{exchangeId}}'           : The id of the exchange where the ad was bought
-'{{keywordId}}'            : The id of the keyword for the transaction
-'{{keyword}}'              : The keyword for targeted for the transaction
-'{{escapedKeyword}}'       : The keyword in escaped format
-'{{cacheBust}}'            : A unique value generated to prevent caching
-'{{adId}}'                 : The id of the creative
-'{{adPosition}}'           : The position of the creative on the page
-'{{adSize}}'               : The size of the creative
-'{{campaignId}}'           : The id of the campaign that ran the creative
-'{{countryId}}'            : The MAXMIND Country ID
-'{{regionId}}'             : The MAXMIND Region ID
-'{{metroId}}'              : The MAXMIND Metro ID
-'{{geoId}}'                : The MAXMIND Geo ID
-'{{userAgent}}'            : The User Agent string sent in the bid request
-'{{ip}}'                   : The IP address of the user being served        NOTE: AdX truncates the last octet of the IP so this data may be unreliable.
-'{{referer}}'              : The unescaped referrer sent in the bid request NOTE: Not all exchanges forward this data consistently. It may be unreliable.
-'{{escapedReferer}}'       : The escaped referrer sent in the bid request   NOTE: Not all exchanges forward this data consistently. It may be unreliable.
-```
+
 ## Additional Information
 
 * If you include an ad.size meta tag in the ad when you upload it the system will automatically detect and choose the correct ad size for your automatically. The Ad size meta tag is defined within the <head> tag. For example:
