@@ -34,12 +34,12 @@ Add an HTML page that references the image. Below is the HTML we will use for th
 ```
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name=”ad.size” content=”width=300,height=250”>
-	</head>
-	<body>
-		<img src=”300x250.jpg” onclick=”window.open('{{clickMacro}}')"/>
-	</body>
+  <head>
+    <meta name=”ad.size” content=”width=300,height=250”>
+  </head>
+  <body>
+    <img src=”300x250.jpg” onclick=”window.open('{{clickMacro}}')"/>
+  </body>
 </html>
 ```
 
